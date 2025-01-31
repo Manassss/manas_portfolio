@@ -35,7 +35,7 @@ const Header = () => {
   };
 
   const navbarBrandStyle = {
-    fontFamily: "'Pacifico', cursive", // Cursive font
+    fontFamily: "'Verdana', sans-serif",
     fontSize: '3rem', // Larger font size
     fontWeight: '400', // Light font weight for cursive style
     letterSpacing: '2px',
