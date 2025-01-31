@@ -144,6 +144,8 @@ const sectionStyle = {
   alignItems: "center", // Ensures the content is centered horizontally
   marginLeft: "auto", // Centers the content horizontally
   marginRight: "auto", // Centers the content horizontally
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
 };
 
 
@@ -164,8 +166,8 @@ const skillItemStyle = {
   width: "160px",
   height: "auto",
   cursor: "pointer",
-  fontFamily: "'Arial', sans-serif", // Use sharp sans-serif font
-};
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",};
 
 const headingStyle = {
   fontSize: "3rem",
@@ -174,6 +176,8 @@ const headingStyle = {
   textTransform: "uppercase",
   letterSpacing: "1px",
   color: "#000", // Black color for the heading
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
 };
 
 const subHeadingStyle = {
@@ -194,6 +198,8 @@ const iconWrapperStyle = {
   fontSize: "2rem", // Increased size
   marginBottom: "8px",
   transition: "color 0.3s",
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
 };
 
 const ratingStyle = {

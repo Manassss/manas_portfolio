@@ -4,7 +4,6 @@ const Blog = () => {
   return (
     <section id="blog">
       <h2>Blog</h2>
-      <p>Coming soon! Stay tuned for articles on development, tech, and more.</p>
 
       <div className="blog-cards">
         <div className="blog-card">
@@ -25,9 +24,12 @@ const Blog = () => {
       </div>
 
       <style jsx>{`
-        #blog {
+        h2 {
           text-align: center;
           padding: 20px;
+          font-size: 5rem; /* Increases font size */
+          fontFamily: "'Verdana', sans-serif",
+          fontWeight: "bold",
         }
         .blog-cards {
           display: flex;
@@ -35,6 +37,9 @@ const Blog = () => {
           gap: 500px; /* Increased gap between cards */
           flex-wrap: wrap;
           padding-top: 20px;
+          fontFamily: "'Verdana', sans-serif",
+          fontWeight: "bold",
+          
         }
         .blog-card {
           background-color: transparent;
@@ -44,27 +49,40 @@ const Blog = () => {
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           backdrop-filter: blur(10px);
           transition: transform 0.3s ease;
-          font-weight: bold; /* Makes the text bold */
           font-size: 1.1rem; /* Increases font size */
+          fontFamily: "'Verdana', sans-serif",
+          fontWeight: "bold",
         }
         .blog-card h3 {
-          font-size: 1.5rem; /* Makes the title bigger */
-          margin-bottom: 10px;
+              font-size: 2rem; /* Makes the title bigger */
+              margin-bottom: 10px;
+              fontFamily: "'Verdana', sans-serif",
+              fontWeight: "bold",
         }
         .blog-card p {
-          font-size: 1.2rem; /* Increases the content font size */
+              font-size: 1.2rem; /* Increases the content font size */
+              fontFamily: "'Verdana', sans-serif",
+              fontWeight: "bold",
         }
         .blog-card:hover {
           transform: translateY(-10px);
         }
-        .read-more {
-          color: #007bff;
-          text-decoration: none;
-          font-weight: bold;
-        }
-        .read-more:hover {
-          text-decoration: underline;
-        }
+.read-more {
+  color:white;
+  text-decoration: none;
+  font-family: 'Verdana', sans-serif; /* Corrected property name */
+  font-weight: bold;  
+  background-color: blue; /* Corrected background color */
+  padding: 10px 20px; /* Added padding for better button appearance */
+  border-radius: 5px; /* Optional: adds rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  
+}
+
       `}</style>
     </section>
   );

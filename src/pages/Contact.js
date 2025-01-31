@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section id="contact" style={sectionStyle}>
       <div style={cardStyle}>
-        <h2>Contact Me</h2>
+        <h1>Contact Me</h1>
         <p style={emailStyle}>Email: <a href="mailto:manas.mandlecha.career@gmail.com">manas.mandlecha.career@gmail.com</a></p>
         
         {/* Resume Download Section */}
@@ -60,6 +60,8 @@ const emailStyle = {
   marginBottom: '20px',
   fontSize: '1rem',
   color: '#333',
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
 };
 
 const resumeSectionStyle = {
@@ -71,6 +73,9 @@ const downloadLinkStyle = {
   color: '#007bff',
   textDecoration: 'none',
   fontWeight: 'bold',
+  fontFamily: "'Verdana', sans-serif",
+
 };
+
 
 export default Contact;

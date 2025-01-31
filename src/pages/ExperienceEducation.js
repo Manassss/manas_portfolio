@@ -96,6 +96,8 @@ const overlayStyle = {
   backgroundPosition: "center",
   minHeight: "100vh",
   padding: "40px 0",
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
 };
 
 const sectionHeadingStyle = {
@@ -136,19 +138,22 @@ const timelineContentStyle = {
 
 const titleStyle = {
   fontSize: "1.5rem",
-  fontWeight: "bold",
   color: "#007bff",
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
 };
 
 const institutionStyle = {
   fontSize: "1.2rem",
-  fontWeight: "500",
   color: "#555",
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
 };
 
 const yearStyle = {
   fontSize: "1.1rem",
-  fontWeight: "500",
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
   color: "#777",
   marginBottom: "10px",
 };
@@ -162,6 +167,8 @@ const listItemStyle = {
   fontSize: "1rem",
   color: "#333",
   marginBottom: "5px",
+  fontFamily: "'Verdana', sans-serif",
+  fontWeight: "bold",
 };
 
 export default Timeline;

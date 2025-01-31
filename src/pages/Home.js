@@ -45,43 +45,46 @@ const Home = () => {
       <Header />
 
       {/* Home Section */}
-      <section id='home'
-        className="hero d-flex align-items-center"
-        style={{
-          height: '100vh',
-          position: 'relative', 
-          zIndex: 1, // Content stays above the background
-        }}
-      >
-        <div className="container text-center" style={{ color: '#fff' }}>
-          <motion.h1
-            className="display-3"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            style={{
-              fontWeight: 'bold',
-              fontSize: '3rem',
-              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-              color: 'black',
-            }}
-          >
-            Welcome to My Portfolio!
-          </motion.h1>
-          <motion.p
-            initial={{ x: -100 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1 }}
-            style={{
-              fontSize: '1.2rem',
-              lineHeight: '1.6',
-              marginBottom: '20px',
-              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)',
-              color: 'black',
-            }}
-          >
-I'm a full-stack developer with a passion for crafting elegant and impactful software solutions. My toolkit includes modern web technologies like React, Node.js, and Firebase, which I leverage to build innovative applications that tackle real-world challenges.  I'm currently on an exciting journey into the realms of machine learning and cloud computing, eager to unlock their potential and weave them into my projects.  Always learning and exploring, I'm particularly thrilled about the future of AI and mobile development, and I'm actively pursuing opportunities to expand my expertise in these areas.  I believe technology has the power to shape our world, and I'm driven to be a part of that positive change.
-</motion.p>
+      {/* Home Section */}
+<section id='home'
+  className="hero d-flex align-items-center"
+  style={{
+    height: '100vh',
+    position: 'relative', 
+    zIndex: 1, // Content stays above the background
+  }}
+>
+  <div className="container text-center" style={{ color: '#fff' }}>
+    <motion.h1
+      className="display-3"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      style={{
+        fontWeight: 'bold',
+        fontSize: 'rem',
+        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        color: 'black',
+        fontFamily: "'Pacifico', Verdana", // Applying the cursive font
+      }}
+    >
+Welcome!!!
+      </motion.h1>
+    <motion.p
+      initial={{ x: -100 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1 }}
+      style={{
+        fontSize: '1.3rem',
+        lineHeight: '1.6',
+        marginBottom: '20px',
+        textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)',
+        color: 'black',
+        fontFamily: "'Verdana', cursive", // Applying the cursive font
+      }}
+    >
+      I'm a full-stack developer with a passion for crafting elegant and impactful software solutions. My toolkit includes modern web technologies like React, Node.js, and Firebase, which I leverage to build innovative applications that tackle real-world challenges. I'm currently on an exciting journey into the realms of machine learning and cloud computing, eager to unlock their potential and weave them into my projects. Always learning and exploring, I'm particularly thrilled about the future of AI and mobile development, and I'm actively pursuing opportunities to expand my expertise in these areas. I believe technology has the power to shape our world, and I'm driven to be a part of that positive change.
+    </motion.p>
 
           <motion.div
             className="my-image mt-4"
@@ -115,6 +118,7 @@ I'm a full-stack developer with a passion for crafting elegant and impactful sof
               borderRadius: '30px',
               boxShadow: '0px 6px 15px rgba(0, 0, 0, 0.2)',
               cursor: 'pointer',
+              fontFamily: "'Pacifico', Verdana",
             }}
             onClick={() => scrollToSection(aboutRef)}
           >

@@ -61,12 +61,18 @@ const styles = {
     color: '#fff',
     borderRadius: '12px',
     backgroundColor: 'transparent',
+    fontFamily: "'Verdana', sans-serif",
+
   },
   heading: {
     textAlign: 'center',
-    fontSize: '2.5rem',
+    fontSize: '3rem',
     marginBottom: '30px',
     color: 'black',
+    fontFamily: "'Verdana', sans-serif",
+    fontWeight: "bold",
+
+
   },
   row: {
     display: 'flex',
@@ -95,6 +101,8 @@ const styles = {
     fontSize: '1.5rem',
     margin: '10px 0',
     color: 'black',
+    fontFamily: "'Verdana', sans-serif",
+    fontWeight: "bold",
   },
   button: {
     backgroundColor: '#007bff',
@@ -105,6 +113,8 @@ const styles = {
     cursor: 'pointer',
     color: '#fff',
     textDecoration: 'none',
+    fontFamily: "'Verdana', sans-serif",
+    fontWeight: "bold",
   }
 };
 

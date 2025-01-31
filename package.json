@@ -1,7 +1,4 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
   "homepage": "https://Manassss.github.io/portfolio",
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -16,9 +13,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

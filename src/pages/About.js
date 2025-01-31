@@ -68,7 +68,7 @@ const styles = {
     backgroundAttachment: "fixed",
     minHeight: "100vh",
     color: "#e2e8f0",
-    fontFamily: "'Poppins', sans-serif",
+    fontFamily: "'Verdana', sans-serif",
   },
   section: {
     display: "grid",
@@ -105,16 +105,22 @@ const styles = {
     fontSize: "1.8rem",
     fontWeight: "bold",
     marginBottom: "15px",
+    fontFamily: "'Verdana', sans-serif",
+
   },
   text: {
     fontSize: "1.1rem",
     lineHeight: "1.6",
+    fontFamily: "'Verdana', sans-serif",
+
   },
   highlight: {
     fontSize: "1.2rem",
     fontWeight: "bold",
     marginTop: "15px",
     color: "#facc15",
+    fontFamily: "'Verdana', sans-serif",
+
   },
   point: {
     fontSize: "1.1rem",

@@ -6,7 +6,7 @@ const Header = () => {
 
   // Styles
   const navbarStyle = {
-    background: 'linear-gradient(135deg, #f4f1e1, #e8e2d7)', // Light cream and beige gradient
+    background: 'linear-gradient(135deg, #f7c1d7, #ffd699, #a1c6ea, #d1a7d6, #ffffff)', // Gradient background
     position: 'fixed',
     width: '100%',
     top: 0,
@@ -17,7 +17,7 @@ const Header = () => {
 
   const navLinkStyle = {
     transition: 'transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease',
-    color: 'black', // Default text color
+    color: 'black',
     cursor: 'pointer',
     padding: '8px 15px',
     borderRadius: '5px',
@@ -34,10 +34,14 @@ const Header = () => {
   };
 
   const navbarBrandStyle = {
-    fontFamily: "'Roboto', sans-serif",
-    letterSpacing: '1px',
-    color: '#333',
-    fontWeight: 'bold',
+    fontFamily: "'Pacifico', cursive", // Cursive font
+    fontSize: '3rem', // Larger font size
+    fontWeight: '400', // Light font weight for cursive style
+    letterSpacing: '2px',
+    color: '#4a4a4a', // Dark grey color for better contrast
+    textShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', // Soft text shadow
+    transition: 'color 0.3s ease, transform 0.3s ease',
+    cursor: 'pointer',
   };
 
   const iconStyle = {
@@ -50,15 +54,13 @@ const Header = () => {
   };
 
   const handleScroll = (id) => {
-    // Scroll to top for 'home' section
     if (id === 'home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      // Scroll to other sections, but account for the navbar height
       const element = document.getElementById(id);
       if (element) {
         window.scrollTo({
-          top: element.offsetTop - 70, // Adjust for the fixed navbar height
+          top: element.offsetTop - 70, // Adjust for navbar height
           behavior: 'smooth',
         });
       }
@@ -71,7 +73,7 @@ const Header = () => {
         <span
           className="navbar-brand fs-3 fw-bold text-dark"
           style={navbarBrandStyle}
-          onClick={() => handleScroll('home')} // Ensure it scrolls to the top
+          onClick={() => handleScroll('home')}
         >
           Manas Mandlecha
         </span>
