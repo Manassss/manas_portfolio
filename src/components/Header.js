@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaInfoCircle, FaBriefcase, FaTools, FaGraduationCap, FaBlog, FaEnvelope } from 'react-icons/fa';
+import gif from '../assests/home.gif'; // Import the GIF from the assets folder
 
 const Header = () => {
   const [hoveredLink, setHoveredLink] = useState(null);
@@ -42,6 +43,8 @@ const Header = () => {
     textShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', // Soft text shadow
     transition: 'color 0.3s ease, transform 0.3s ease',
     cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center', // Align text and gif
   };
 
   const iconStyle = {
@@ -75,6 +78,7 @@ const Header = () => {
           style={navbarBrandStyle}
           onClick={() => handleScroll('home')}
         >
+          <img src={gif} alt="Logo" style={{ width: '60px', height: '60px', marginRight: '10px' }} /> {/* Add GIF */}
           Manas Mandlecha
         </span>
         <button
