@@ -10,7 +10,7 @@ const Contact = () => {
         {/* Resume Download Section */}
         <div style={resumeSectionStyle}>
           <a 
-            href="/Manas_Resume.pdf"  // This is the path to your PDF file in the public folder
+            href="/Manas-Resume.pdf"  // This is the path to your PDF file in the public folder
             download 
             style={downloadLinkStyle}
           >
